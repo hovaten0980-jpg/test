@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-primary: #1C1917; /* stone-900 */
+  --color-secondary: #57534E; /* stone-600 */
+  --color-accent: #E5E5E5; /* neutral-200 */
+  --color-background: #FAFAFA; /* neutral-50 - softer white */
+  --color-surface: #FFFFFF;
+  --color-rose-blush: #F5E6E8; /* Custom soft blush for cosmetics vibe */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+  }
+}
